@@ -13,3 +13,4 @@ Cet exemple a pour but d'illustrer le pattern Visitor uniquement, on aurait pu c
 
 - Veuillez noter que l'objet Zoo sur le diagramme est Main.java
 - Le diagramme a été réalisé avant l'implémentation du code, il se peut que des méthodes n'existant pas sur le diagramme existent dans le code
+- Le type d'objet dans la méthode visite() dans la classe Soigneur est IAnimal (implémentation de l'interface) et non Animal
