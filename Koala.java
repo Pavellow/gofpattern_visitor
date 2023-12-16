@@ -1,20 +1,20 @@
 package visitorpackage;
 
-public class Tigre implements IAnimal {
+public class Koala implements IAnimal {
 	
 	private String nomAnimal;
 	private int age;
 	private String typeNourriture;
 
-	Tigre(String nomAnimalParam, int ageParam, String typeNourritureParam) {
+	Koala(String nomAnimalParam, int ageParam, String typeNourritureParam) {
 		this.nomAnimal = nomAnimalParam;
 		this.age = ageParam;
 		this.typeNourriture = typeNourritureParam;
 		System.out.println(this.toString());
-	}		
+	}	
 	
 	public String toString() {
-		return "Tigre " + this.getNomAnimal() + " agé de " + this.getAge() + " ans" + "\n";
+		return "Lion " + this.getNomAnimal() + " agé de " + this.getAge() + " ans" + "\n";
 	}
 
 	public String getNomAnimal() {
@@ -47,12 +47,13 @@ public class Tigre implements IAnimal {
 	}
 	
 	public String faireBruit() {
-		return "je suis un tigre rusé";
+		return "Je suis un koala et je dors";
 		
 	}
 	
 	@Override
 	public String manger() {
+		// TODO Auto-generated method stub
 		return this.nomAnimal + " mange";
 	}
 
