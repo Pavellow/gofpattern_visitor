@@ -4,10 +4,12 @@ public class Lion implements IAnimal {
 	
 	private String nomAnimal;
 	private int age;
-	
-	Lion(String nomAnimalParam, int ageParam) {
+	private String typeNourriture;
+
+	Lion(String nomAnimalParam, int ageParam, String typeNourritureParam) {
 		this.nomAnimal = nomAnimalParam;
 		this.age = ageParam;
+		this.typeNourriture = typeNourritureParam;
 		System.out.println(this.toString());
 	}	
 	
@@ -30,6 +32,14 @@ public class Lion implements IAnimal {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	
+	public String getTypeNourriture() {
+		return typeNourriture;
+	}
+
+	public void setTypeNourriture(String typeNourriture) {
+		this.typeNourriture = typeNourriture;
+	}
 
 	@Override
 	public String accepte(IVisiteur visiteur) {
@@ -40,6 +50,12 @@ public class Lion implements IAnimal {
 	public String faireBruit() {
 		// TODO Auto-generated method stub
 		return "GRAOU LE LION";
+	}
+
+	@Override
+	public String manger() {
+		// TODO Auto-generated method stub
+		return this.nomAnimal + " mange";
 	}
 
 }

@@ -4,10 +4,12 @@ public class Panda implements IAnimal {
 	
 	private String nomAnimal;
 	private int age;
-	
-	Panda(String nomAnimalParam, int ageParam) {
+	private String typeNourriture;
+
+	Panda(String nomAnimalParam, int ageParam, String typeNourritureParam) {
 		this.nomAnimal = nomAnimalParam;
 		this.age = ageParam;
+		this.typeNourriture = typeNourritureParam;
 		System.out.println(this.toString());
 	}	
 	
@@ -30,6 +32,14 @@ public class Panda implements IAnimal {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	
+	public String getTypeNourriture() {
+		return typeNourriture;
+	}
+
+	public void setTypeNourriture(String typeNourriture) {
+		this.typeNourriture = typeNourriture;
+	}
 
 	@Override
 	public String accepte(IVisiteur visiteur) {
@@ -39,6 +49,12 @@ public class Panda implements IAnimal {
 	public String faireBruit() {
 		return "PandaPandaPandaPanda";
 		
+	}
+	
+	@Override
+	public String manger() {
+		// TODO Auto-generated method stub
+		return this.nomAnimal + " mange";
 	}
 
 }

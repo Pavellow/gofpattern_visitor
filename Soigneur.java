@@ -33,7 +33,14 @@ public class Soigneur implements IVisiteur {
 
 	@Override
 	public String visite(IAnimal animal) {
-		return("Le soigneur a visité l'animal " + animal.getNomAnimal() + "\nL'animal fait un bruit : " + animal.faireBruit());
+		return("Le soigneur a visité l'animal " 
+				+ animal.getNomAnimal() + 
+				"\nL'animal fait un bruit : " 
+				+ animal.faireBruit()) + "\n" +
+				"Le soigneur nourrit l'animal avec " +
+				animal.getTypeNourriture();
+				
+	
 	}
 
 }

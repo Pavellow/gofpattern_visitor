@@ -4,12 +4,14 @@ public class Tigre implements IAnimal {
 	
 	private String nomAnimal;
 	private int age;
-	
-	Tigre(String nomAnimalParam, int ageParam) {
+	private String typeNourriture;
+
+	Tigre(String nomAnimalParam, int ageParam, String typeNourritureParam) {
 		this.nomAnimal = nomAnimalParam;
 		this.age = ageParam;
+		this.typeNourriture = typeNourritureParam;
 		System.out.println(this.toString());
-	}	
+	}		
 	
 	public String toString() {
 		return "Lion " + this.getNomAnimal() + " agé de " + this.getAge() + " ans" + "\n";
@@ -30,6 +32,14 @@ public class Tigre implements IAnimal {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	
+	public String getTypeNourriture() {
+		return typeNourriture;
+	}
+
+	public void setTypeNourriture(String typeNourriture) {
+		this.typeNourriture = typeNourriture;
+	}
 
 	@Override
 	public String accepte(IVisiteur visiteur) {
@@ -39,6 +49,12 @@ public class Tigre implements IAnimal {
 	public String faireBruit() {
 		return "je suis un tigre rusé";
 		
+	}
+	
+	@Override
+	public String manger() {
+		// TODO Auto-generated method stub
+		return this.nomAnimal + " mange";
 	}
 
 }
