@@ -7,7 +7,7 @@ Cet exemple a pour but d'illustrer le pattern Visitor uniquement, on aurait pu c
 
 ## Diagramme de classe
 
-![Diagramme de Classe](/gof_visitor.png)
+![Diagramme de Classe](/vraidiagramme_exemple.png)
 
 ## Commentaire(s) non ajouté(s) au diagramme
 
